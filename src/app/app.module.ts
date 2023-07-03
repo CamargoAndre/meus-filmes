@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { TopoComponent } from './shared/components/topo/topo.component';
+import { AlertaComponent } from './shared/components/alerta/alerta.component';
+import { RodapeComponent } from './shared/components/rodape/rodape.component';
+import { TabelaComponent } from './shared/components/tabela/tabela.component';
 
 
 
@@ -17,6 +20,9 @@ import { TopoComponent } from './shared/components/topo/topo.component';
     AppComponent,
     CadastroFilmeComponent,
     TopoComponent,
+    AlertaComponent,
+    RodapeComponent,
+    TabelaComponent,
   ],
   imports: [
     BrowserModule,
