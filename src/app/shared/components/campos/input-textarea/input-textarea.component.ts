@@ -7,6 +7,8 @@ import { ValidarCamposService } from '../validar-campos.service';
   templateUrl: './input-textarea.component.html',
   styleUrls: ['./input-textarea.component.css']
 })
+
+
 export class InputTextareaComponent {
 
   @Input()
