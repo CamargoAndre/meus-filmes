@@ -32,7 +32,7 @@ export class ListarFilmesComponent implements OnInit {
   private listarFilmes(): void{
 
     this.pagina++;
-    this.filmesService.listar(this.qtdPagina, this.qtdPagina)
+    this.filmesService.listar()
     .subscribe((filmes: Filme[]) => this.filmes.push(...filmes));
   }
 

@@ -19,10 +19,8 @@ export class FilmesService {
 
   }
 
-  listar(pagina: number, qtdPagina: number):Observable<Filme[]>{
+  listar():Observable<Filme[]>{
     let httpParams = new HttpParams();
-    httpParams = httpParams.set('_page', pagina.toString())
-    httpParams = httpParams.set('_limit', qtdPagina.toString())
     return this.http.get<Filme[]>(url, {params: httpParams });
   }
 

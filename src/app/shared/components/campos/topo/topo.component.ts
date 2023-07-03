@@ -12,8 +12,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 
 export class TopoComponent implements OnInit{
 
-  @ViewChild('sidenav', { static: false })
-  sidenav!: MatSidenav;
+  @ViewChild('sidenav', { static: false }) sidenav: MatSidenav;
 
   constructor(){}
 

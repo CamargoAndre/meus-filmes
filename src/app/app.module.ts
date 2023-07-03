@@ -7,13 +7,12 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
-import { TopoComponent } from './shared/components/topo/topo.component';
+import { TopoComponent } from './shared/components/campos/topo/topo.component';
 import { AlertaComponent } from './shared/components/alerta/alerta.component';
 import { RodapeComponent } from './shared/components/rodape/rodape.component';
-import { TabelaComponent } from './shared/components/tabela/tabela.component';
 import { FilmesModule } from './filmes/filmes.module';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -22,10 +21,11 @@ import { HttpClientModule } from '@angular/common/http';
     TopoComponent,
     AlertaComponent,
     RodapeComponent,
-    TabelaComponent
+
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     LayoutModule,
